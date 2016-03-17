@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <exception>
+#include <stdexcept>
 #include <SDL.h>
 #include <GL/glew.h>
 
@@ -28,8 +29,8 @@ void init()
 
     message =  "Init OpenGL - ";
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
-    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 0);
-    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 0);
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 2);
 
     _glcontext = SDL_GL_CreateContext(_sdlWindow);
 
